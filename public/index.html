@@ -8,64 +8,118 @@
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/my-addons/myStyles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./css/scss/_transitions.scss">
     <!-- JAM icons -->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="icon" href="./assets/ico/computacion-en-la-nube.ico">
+    <script src="./js/collapseElement.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G3T7JCBS1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5G3T7JCBS1');
+    </script>
+
+    <!--Google Adsense-->
+    <script data-ad-client="ca-pub-6475608835104659" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-<!-- Cabecera (Logo y menú de navegación) -->
-<!--
-<header class="">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../assets/logo/logo.jpg" alt="logo" class="my-logo-resize">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#primero">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="##segundo">Apps</a>
-                    </li>
-
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
--->
 <main>
     <section>
         <div class="text-center">
             <div class="card-header">
                 Apps - Free
             </div>
-            <div class="container">
-                <div class="vh-100 row align-items-center">
-                    <div class="card-body col">
-                        <h5 class="card-title">Spotify Premium Free</h5>
-                        <p class="card-text">Download spotify by clicking the button below.</p>
-                        <br>
-                        <div class="my-container-resize">
-                            <img src="assets/logo/Spotify-logo_1_-removebg-preview.png"
-                                 class="my-logo-resize card-img" alt="...">
+            <section>
+                <br>
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="card-body col">
+                            <h5 class="card-title">Spotify Premium Free</h5>
+                            <p class="card-text">Download spotify by clicking the button below.</p>
+                            <br>
+                            <div class="my-container-resize">
+                                <img src="assets/logo/Spotify-logo_1_-removebg-preview.png"
+                                     class="my-logo-resize card-img" alt="...">
+                            </div>
+                            <br>
                         </div>
+                    </div>
+                </div>
+                <div class="container col-sm-8">
+                    <div class="alert alert-primary mt-3 mb-3" role="alert">
+                        This file may contain some malware that can affect your device, all actions that you performed
+                        are under your responsibility.
+                    </div>
+                    <div class="accordion" id="accordionSection">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne">Step 1
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="collapseOne"
+                                 data-bs-parent="#accordionSection">
+                                <div class="accordion-body">
+                                    First of all, uninstall spotify if you have it installed. Then go to settings on
+                                    your device and enable access to apps from unknown sources
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item  mb-3">
+                            <h2 class="accordion-header">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo">Step 2
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="collapseTwo"
+                                 data-bs-parent="#accordionSection">
+                                <div class="accordion-body">
+                                    Click on the button called "Install Now" that appears at the bottom.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree">Step 3
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="collapseThree"
+                                 data-bs-parent="#accordionSection">
+                                <div class="accordion-body">
+                                    Once the application is installed, click on "Sign up for free" and enter your email,
+                                    after entering your email, a notice will appear informing you that your email is
+                                    already registered, then you will click on "go to login". Next, click on the option
+                                    at the bottom "login without password" and then you will need to confirm your
+                                    password by clicking "open email application". Confirm the email by pressing the "go
+                                    to Spotify" button and voila, you can enjoy Spotify premium for free.
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="card-body col">
                         <br>
                         <a href="https://www.mediafire.com/file/wvzi9ittx10e8cd/Spotify-Mod-v8.6.32.925-AndroForever.com.apk/file">
-                            <button type="button" class="btn btn-outline-success">Install Now
+                            <button type="button" class="btn btn-outline-success my-botton-resize">Install Now
                             </button>
                         </a>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -75,8 +129,16 @@
 <footer>
 
     <div class="card-footer text-muted text-center">
-        <p>© 2021 | 3NZ0 L1V3LL1</p>
+        <p>© 2000 | 🐱‍👤</p>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
 </body>
 </html>

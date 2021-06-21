@@ -3,11 +3,12 @@
     width: 50px;
 }
 
-.my-main-resize{
-    height: 100vh;
-}
-
 .my-container-resize{
     width: 15rem;
     margin: auto;
+}
+
+.my-botton-resize{
+    width: 15rem;
+    height: 3rem;
 }
